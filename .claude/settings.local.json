@@ -10,7 +10,9 @@
       "Bash(gh repo create:*)",
       "Bash(git push:*)",
       "Bash(gh repo view:*)",
-      "Bash(gh repo edit:*)"
+      "Bash(gh repo edit:*)",
+      "Bash(openspec list:*)",
+      "Bash(openspec archive:*)"
     ],
     "deny": [],
     "ask": []
