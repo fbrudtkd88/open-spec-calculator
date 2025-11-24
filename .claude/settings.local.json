@@ -16,5 +16,8 @@
     ],
     "deny": [],
     "ask": []
-  }
+  },
+  "enabledMcpjsonServers": [
+    "web"
+  ]
 }
