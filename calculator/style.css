@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.calculator-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.calculator {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.display {
+    background: #333;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: right;
+    padding: 20px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: #ddd;
+    padding: 1px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    background: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.btn:active {
+    transform: scale(0.95);
+    background: #e0e0e0;
+}
+
+.btn:hover {
+    background: #e8e8e8;
+}
+
+.btn-number {
+    background: #f9f9f9;
+}
+
+.btn-number:hover {
+    background: #f0f0f0;
+}
+
+.btn-operator {
+    background: #ff9500;
+    color: #fff;
+}
+
+.btn-operator:hover {
+    background: #e68900;
+}
+
+.btn-operator:active {
+    background: #e68900;
+}
+
+.btn-function {
+    background: #e74c3c;
+    color: #fff;
+}
+
+.btn-function:hover {
+    background: #c0392b;
+}
+
+.btn-function:active {
+    background: #c0392b;
+}
+
+.btn-equals {
+    grid-column: 4;
+    background: #27ae60;
+    color: #fff;
+}
+
+.btn-equals:hover {
+    background: #229954;
+}
+
+.btn-equals:active {
+    background: #229954;
+}
+
+.btn-zero {
+    grid-column: span 2;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 480px) {
+    .calculator-container {
+        max-width: 100%;
+    }
+
+    .display {
+        font-size: 28px;
+        padding: 15px;
+        min-height: 70px;
+    }
+
+    .btn {
+        padding: 15px;
+        font-size: 16px;
+    }
+}
